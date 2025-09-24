@@ -4,6 +4,7 @@ export default function Layout() {
     return (
         <>
             <header>
+                <img src='../src/assets/logo.png' className="g-logo" alt="Gardiner logo" />
                 <span className="brand">My Portfolio</span>
                 <nav>
                     <NavLink to="/" end className={({isActive}) => isActive ? "active" : undefined}>Home</NavLink>|
