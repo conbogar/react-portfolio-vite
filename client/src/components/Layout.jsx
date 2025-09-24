@@ -1,19 +1,21 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Layout() {
     return (
         <>
-            <h1>My Portfolio</h1>
-            <nav>
-                <Link to="/">Home</Link> | 
-                <Link to="/about">About</Link> | 
-                <Link to="/education">Education</Link> | 
-                <Link to="/projects">Projects</Link> | 
-                <Link to="/contact">Contacts</Link> | 
-                <Link to="/services">Services</Link>
-            </nav>
-                <br/>
-            <hr />
+            <header>
+                <span className="brand">My Portfolio</span>
+                <nav>
+                    <NavLink to="/" end className={({isActive}) => isActive ? "active" : undefined}>Home</NavLink> | 
+                    <NavLink to="/about" className={({isActive}) => isActive ? "active" : undefined}>About</NavLink> | 
+                    <NavLink to="/education" className={({isActive}) => isActive ? "active" : undefined}>Education</NavLink> | 
+                    <NavLink to="/projects" className={({isActive}) => isActive ? "active" : undefined}>Projects</NavLink> | 
+                    <NavLink to="/contact" className={({isActive}) => isActive ? "active" : undefined}>Contacts</NavLink> | 
+                    <NavLink to="/services" className={({isActive}) => isActive ? "active" : undefined}>Services</NavLink>
+                </nav>
+                    <br/>
+                <hr />
+            </header>
         </>
     );
 }

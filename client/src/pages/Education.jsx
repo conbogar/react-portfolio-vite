@@ -1,7 +1,8 @@
+import { useTitle } from "../hooks/useTitle.js";
+
 export default function Education() {
+    useTitle("Education");
     return (
-        <div>
-            <p>Education</p>
-        </div>
+            <h1>Education</h1>
     );
 }

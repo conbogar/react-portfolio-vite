@@ -1,7 +1,8 @@
+import { useTitle } from '../hooks/useTitle.js';
+
 export default function About() {
+    useTitle("About");
     return (
-        <div>
-            <p>About</p>
-        </div>
+        <h1>About</h1>
     );
 }

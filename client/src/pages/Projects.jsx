@@ -1,7 +1,8 @@
+import { useTitle } from "../hooks/useTitle.js";
+
 export default function Projects() {
+    useTitle("Projects");
     return (
-        <div>
-            <p>Projects</p>
-        </div>
+            <h1>Projects</h1>
     );
 }

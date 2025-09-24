@@ -1,7 +1,8 @@
+import { useTitle } from "../hooks/useTitle";
+
 export default function Contact() {
+    useTitle("Contact");
     return (
-        <div>
-            <p>Contact</p>
-        </div>
+            <h1>Contact</h1>
     );
 }

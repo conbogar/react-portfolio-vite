@@ -11,15 +11,17 @@ const MainRouter = () => {
     return (
     <>
         <Layout/>
-        <Routes>
-            <Route path = "/" element = {<Home />} />
-            <Route path = "/about" element = {<About />} />
-            <Route path = "/education" element = {<Education />} />
-            <Route path = "/contact" element = {<Contact />} />
-            <Route path = "/services" element = {<Services />} />
-            <Route path = "/projects" element = {<Projects />} />
-            <Route path = "*" element = {<p>Not Found</p>} />
-        </Routes>
+        <main>
+            <Routes>
+                <Route path = "/" element = {<Home />} />
+                <Route path = "/about" element = {<About />} />
+                <Route path = "/education" element = {<Education />} />
+                <Route path = "/contact" element = {<Contact />} />
+                <Route path = "/services" element = {<Services />} />
+                <Route path = "/projects" element = {<Projects />} />
+                <Route path = "*" element = {<p>Not Found</p>} />
+            </Routes>
+        </main>
     </>
     );
 }
