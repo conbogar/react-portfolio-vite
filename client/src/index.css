@@ -67,6 +67,13 @@ form {
   max-width: 450px;
 }
 
+.cta {
+  display: inline-block;
+  padding: var(--s2) var(--s3);
+  border: 1px solid var(--accent);
+  border-radius: var(--s1);
+}
+
 .brand {
   font-weight: 700;
   font-size: var(--s4);
