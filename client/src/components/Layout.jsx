@@ -1,11 +1,14 @@
 import { NavLink } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 export default function Layout() {
     return (
         <>
             <header>
-                <img src='../src/assets/logo.png' className="g-logo" alt="Gardiner logo" />
-                <span className="brand">My Portfolio</span>
+                <div className="logo-brand">
+                    <img src={logo} className="g-logo" alt="Gardiner logo" />
+                    <span className="brand">Portfolio</span>
+                </div>
                 <nav>
                     <NavLink to="/" end className={({isActive}) => isActive ? "active" : undefined}>Home</NavLink>|
                     <NavLink to="/about" className={({isActive}) => isActive ? "active" : undefined}>About</NavLink>|

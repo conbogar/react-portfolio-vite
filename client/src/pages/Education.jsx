@@ -16,7 +16,7 @@ export default function Education() {
                         <li>Languages: Java, C#, JS, Python, SQL, PL/SQL</li>
                         <li>Frameworks: React, .NET, Node, Express</li>
                         <li>Databases: Oracle, MySQL, MongoDB</li>
-                        <li>Tools: Git, Linux, Docker, VS Code, IntelliJ</li>
+                        <li>Tools: Git, Linux, Docker, VS Code, IntelliJ, SQL Developer</li>
                     </ul>
                 </article>
             </section>

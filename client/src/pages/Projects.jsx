@@ -1,6 +1,7 @@
 import { useTitle } from "../hooks/useTitle.js";
 import wpfCalculator from '../assets/wpf-calculator.png';
 import reactPortfolio from '../assets/react-portfolio.png';
+import javaSingers from '../assets/java-singers.png';
 
 export default function Projects() {
     useTitle("Projects");
@@ -16,7 +17,7 @@ export default function Projects() {
                             A fast single-page site with client routing, custom header, and per-page titles. Built for course submission and as a personal showcase.
                         </p>
                         <ul>
-                            <li><strong>Tech: </strong>Vite, React, React Router</li>
+                            <li><strong>Tech:</strong> Vite, React, React Router</li>
                             <li>
                                 <strong>Links:</strong>{" "}
                                 <a href="">Live</a> 
@@ -42,7 +43,7 @@ export default function Projects() {
                             Desktop calculator supporting + − × ÷, clear, and keyboard input. Logic is separated from the UI for easier testing and changes.
                         </p>
                         <ul>
-                            <li><strong>Tech: </strong>C#, .NET, WPF</li>
+                            <li><strong>Tech:</strong> C#, .NET, WPF</li>
                             <li>
                                 <strong>Links:</strong>{" "}
                                 <a 
@@ -61,21 +62,20 @@ export default function Projects() {
 
                 <article className="project">
                     <div className="content">
-                    <h2>Project 3: </h2>
+                    <h2>Project 3: Java OOP - Singers Records (Console)</h2>
                         <p>
-                            
+                            Console app that manages singer records with a <code>Singers</code> class
+                            (id, name, address, DOB, album count), two constructors, full/individual
+                            setters & getters, and a driver that prints defaults, bulk-set values,
+                            and post-update values.
                         </p>
                         <ul>
-                            <li><strong>Tech:</strong></li>
+                            <li><strong>Tech:</strong> Java (OOP, encapsulation)</li>
                             <li>
                                 <strong>Links:</strong>{" "}
                                 <a 
-                                    href=""
-                                >
-                                    Live
-                                </a> 
-                                <a 
-                                    href=""
+                                    href="https://github.com/conbogar/comp228406-connor-fall2025/tree/main/Connor_COMP228Lab1"
+                                    target="_blank"
                                 >
                                     Source
                                 </a>
@@ -83,7 +83,7 @@ export default function Projects() {
                         </ul>
                     </div>
                     <div className="media">
-                        <img className="project-image" src="https://via.placeholder.com/400x200.png?text=Project+1+Image" alt="Project 1 screenshot" />
+                        <img className="project-image" src={javaSingers} alt="Project 1 screenshot" />
                     </div>
                 </article>
             </section>
