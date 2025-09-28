@@ -10,11 +10,11 @@ export default function Layout() {
                     <span className="brand">Portfolio</span>
                 </div>
                 <nav>
-                    <NavLink to="/" end className={({isActive}) => isActive ? "active" : undefined}>Home</NavLink>|
-                    <NavLink to="/about" className={({isActive}) => isActive ? "active" : undefined}>About</NavLink>|
-                    <NavLink to="/education" className={({isActive}) => isActive ? "active" : undefined}>Education</NavLink>|
-                    <NavLink to="/projects" className={({isActive}) => isActive ? "active" : undefined}>Projects</NavLink>|
-                    <NavLink to="/contact" className={({isActive}) => isActive ? "active" : undefined}>Contact</NavLink>|
+                    <NavLink to="/" end className={({isActive}) => isActive ? "active" : undefined}>Home</NavLink>
+                    <NavLink to="/about" className={({isActive}) => isActive ? "active" : undefined}>About</NavLink>
+                    <NavLink to="/education" className={({isActive}) => isActive ? "active" : undefined}>Education</NavLink>
+                    <NavLink to="/projects" className={({isActive}) => isActive ? "active" : undefined}>Projects</NavLink>
+                    <NavLink to="/contact" className={({isActive}) => isActive ? "active" : undefined}>Contact</NavLink>
                     <NavLink to="/services" className={({isActive}) => isActive ? "active" : undefined}>Services</NavLink>
                 </nav>
                     <br/>

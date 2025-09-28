@@ -6,12 +6,9 @@ export default function About() {
     useTitle("About");
     return (
         <>
-                <h1>About me</h1>
-            
-            <section className="about">
-                <img src={headshot} className='headshot' alt='Connor Gardiner headshot' />
-                <button><a href={resume} target='_blank' rel='noreferrer' className='resume-link'>Download my resume (PDF)</a></button>
-            </section>
+            <h1>About me</h1>
+            <section className="about-container">
+
             <section className="bio">
                 <p>
                     Hello! My name is Connor Gardiner, and I am a dedicated and passionate software engineering student with a strong foundation in both front-end and back-end technologies. I am currently a student at Centennial College, studying for an advanced diploma in software engineering technology, where I am learning JavaScript, React, Node.js, Java, C#, database concepts and various other technologies.
@@ -25,6 +22,12 @@ export default function About() {
                 <p>
                     When I'm not coding, I enjoy hiking, working out, and exploring new places. These hobbies help me stay creative and inspired.
                 </p>
+            </section>
+
+            <div className="about">
+                <img src={headshot} className='headshot' alt='Connor Gardiner headshot' />
+                <button><a href={resume} target='_blank' rel='noreferrer' className='resume-link'>Download my resume (PDF)</a></button>
+            </div>
             </section>
         </>
     );

@@ -20,7 +20,12 @@ export default function Projects() {
                             <li><strong>Tech:</strong> Vite, React, React Router</li>
                             <li>
                                 <strong>Links:</strong>{" "}
-                                <a href="">Live</a> 
+                                <a 
+                                    href="https://conbogar.vercel.app/"
+                                    target="_blank"
+                                >
+                                    Live
+                                </a> 
                                 {" "}
                                 <a 
                                     href="https://github.com/conbogar/react-portfolio-vite" 

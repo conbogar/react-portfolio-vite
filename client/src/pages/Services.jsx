@@ -1,5 +1,6 @@
 import { useTitle } from "../hooks/useTitle.js";
 import { Link } from "react-router-dom";
+
 export default function Services() {
     useTitle("Services"); 
     return (
@@ -19,7 +20,7 @@ export default function Services() {
                 <h2>Databases & SQL</h2>
                 <p>Schema design, CRUD queries, and basic PL/SQL with Oracle/MySQL.</p>
             </article>
-            <p><Link className="cta-btn" href="/contact">Get in touch</Link></p>
+            <p><Link className="btn" to="/contact">Get in touch</Link></p>
         </>
     );
 }
