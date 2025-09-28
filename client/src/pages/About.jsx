@@ -8,7 +8,6 @@ export default function About() {
         <>
             <h1>About me</h1>
             <section className="about-container">
-
             <section className="bio">
                 <p>
                     Hello! My name is Connor Gardiner, and I am a dedicated and passionate software engineering student with a strong foundation in both front-end and back-end technologies. I am currently a student at Centennial College, studying for an advanced diploma in software engineering technology, where I am learning JavaScript, React, Node.js, Java, C#, database concepts and various other technologies.

@@ -1,13 +1,17 @@
 import { useTitle } from "../hooks/useTitle.js";
 import { Link } from "react-router-dom";
-import headshot from '../assets/headshot.jpeg';
 import closetag from '../assets/close-tag.png';
+import { useLocation } from "react-router-dom";
 
 export default function Home() {
     useTitle("Home");
+
+    const { state } = useLocation();
+    const contact = state?.contact;
     return (
         <>
             <h1>Welcome</h1>
+            {contact && <div className="notice">Thanks, {contact.firstName}! I received your message.</div>}
             <ul className="highlights">
                 <li className="badge">React</li>
                 <li className="badge">C# / WPF</li>
@@ -15,23 +19,24 @@ export default function Home() {
             </ul>
             
 
-        <section className="hero">
+        <section className="home">
         <div className="intro">
-            <section className="home">
-            <p>Hi, I’m Connor. I build simple, reliable apps.</p>
-            <p>I’m a software engineering student focused on React, Java, C#, and SQL. I’m open to internships and collaborations.</p>
-            <p>Feel free to explore my site to learn more about me, my skills, and my projects.</p>
+            <section className="home-intro">
+                <p>Hi, I’m Connor. I build simple, reliable apps.</p>
+                <p>I’m a software engineering student focused on React, Java, C#, and SQL. I’m open to internships and collaborations.</p>
+                <p>Feel free to explore my site to learn more about me, my skills, and my projects.</p>
 
-            <div className="home-ctas">
-                <Link className="btn" to="/about">About me</Link>
-            </div>
+
             </section>
         </div>
 
         <div className="art">
-            <img src={closetag} className="close-tag-img" alt="Connor Gardiner headshot" />
+            <img src={closetag} className="close-tag-img" alt="Generic closing tag image" />
         </div>
         </section>
+        <div className="home-ctas">
+            <Link className="btn" to="/about">About me</Link>
+        </div>
         <section>
         <h2>Featured projects</h2>
         <ul className="cards">
