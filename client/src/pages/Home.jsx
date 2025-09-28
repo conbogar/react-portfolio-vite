@@ -1,6 +1,7 @@
 import { useTitle } from "../hooks/useTitle.js";
 import { Link } from "react-router-dom";
-import headshot from '../assets/headshot.jpg';
+import headshot from '../assets/headshot.jpeg';
+import closetag from '../assets/close-tag.png';
 
 export default function Home() {
     useTitle("Home");
@@ -28,7 +29,7 @@ export default function Home() {
         </div>
 
         <div className="art">
-            <img src={headshot} className="headshot" alt="Connor Gardiner headshot" />
+            <img src={closetag} className="close-tag-img" alt="Connor Gardiner headshot" />
         </div>
         </section>
         <section>
@@ -37,7 +38,9 @@ export default function Home() {
             <li><strong>React Portfolio</strong> — SPA with routing.</li>
             <li><strong>WPF Calculator</strong> — desktop calculator with keyboard.</li>
         </ul>
-        <Link className="btn" to="/projects">My projects</Link>
+        <div className="home-ctas">
+            <Link className="btn" to="/projects">My projects</Link>
+        </div>
         </section>
         </>
     );

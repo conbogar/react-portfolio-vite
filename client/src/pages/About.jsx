@@ -1,5 +1,5 @@
 import { useTitle } from '../hooks/useTitle.js';
-import headshot from '../assets/headshot.jpg';
+import headshot from '../assets/headshot.jpeg';
 import resume from '../assets/resume.pdf';
 
 export default function About() {

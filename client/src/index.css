@@ -46,13 +46,8 @@ header {
 	align-items: center;
 	justify-content: flex-start;
 	padding: var(--s2);
-	border-bottom: 1px solid var(--accent);
+	border-bottom: 1px solid #222;
 	gap: var(--s2);
-}
-
-.logo-brand {
-	margin-left: var(--s4);
-	margin-right: var(--s4);
 }
 
 nav {
@@ -135,6 +130,7 @@ form {
 	}
 
 	.project .media img {
+		max-height: 320px;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
@@ -223,14 +219,6 @@ button[type="submit"]:hover {
 	opacity: .9;
 }
 
-.cta {
-	display: inline-block;
-	padding: var(--s2) var(--s3);
-	border: 1px solid var(--accent);
-	border-radius: var(--s1);
-	margin: var(--s1);
-}
-
 .brand {
 	font-weight: 700;
 	font-size: var(--s4);
@@ -249,12 +237,15 @@ button[type="submit"]:hover {
 
 .about-container {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+	gap: var(--s4);
 }
 
 .hero { 
 	display:flex; 
 	align-items:center;
+	gap:var(--s4);
+	padding-block: var(--s4) var(--s3);
 }
 
 .hero .intro { 
@@ -266,12 +257,20 @@ button[type="submit"]:hover {
 	flex:0 0 260px; 
 }
 
-.headshot {
+.close-tag-img {
 	width: 250px;
 	border-radius: 50%;
+	border: 3px solid var(--fg);
+	margin: 0;
+	object-fit: cover;
+}
+
+.headshot {
+	width: 260px;
+	border-radius: 50%;
 	border: 4px solid var(--accent);
-	margin-bottom: var(--s3);
-	margin-top: 4em;
+	margin: 0;
+	object-fit: cover;
 }
 
 .about button {
@@ -288,8 +287,6 @@ button[type="submit"]:hover {
 	display: flex;
 	flex-direction: column;
 	max-width: 600px;
-	gap: var(--s2);
-	margin-right: var(--s4);
 }
 
 a[target="_blank"]::after {
